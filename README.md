@@ -1,6 +1,7 @@
 # Homebrew Tap
 
 ```sh
-brew install --cask jonathancostin/tap/fan-curve
+brew tap jonathancostin/tap
+brew install --cask fan-curve
 fan-curve-helper install
 ```
