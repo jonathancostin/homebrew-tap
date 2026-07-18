@@ -16,6 +16,11 @@ cask "fan-curve" do
   depends_on macos: :ventura
 
   app "FanCurve-#{version}/build/FanCurve.app", target: "Fan Curve.app"
+  installer script: {
+    executable: "FanCurve-#{version}/build/FanCurve.app/Contents/Resources/install-helper.sh",
+    args:       ["install"],
+    sudo:       true,
+  }
   binary "#{appdir}/Fan Curve.app/Contents/Resources/install-helper.sh", target: "fan-curve-helper"
 
   preflight do
@@ -25,12 +30,8 @@ cask "fan-curve" do
   uninstall script: {
     executable: "#{appdir}/Fan Curve.app/Contents/Resources/install-helper.sh",
     args:       ["uninstall"],
+    sudo:       true,
   }
 
   zap trash: "~/Library/Preferences/com.jonathan.FanCurve.plist"
-
-  caveats <<~EOS
-    Install or refresh the privileged fan helper after each upgrade:
-      fan-curve-helper install
-  EOS
 end
