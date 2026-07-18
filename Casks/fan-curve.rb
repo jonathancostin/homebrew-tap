@@ -1,6 +1,6 @@
 cask "fan-curve" do
-  version "1.0.0"
-  sha256 "6e0991ce925d9e33b3eae07a7d6c5fd11862d4b48e931105afa9d7e64bd763c4"
+  version "1.0.3"
+  sha256 "74e836e99053cfabbb0281f60ca34df66a8f1ea7ae46ce91e85d0ff1eb1f9236"
 
   url "https://github.com/jonathancostin/fan-curve/releases/download/v#{version}/fan-curve-#{version}-source.tar.gz"
   name "Fan Curve"
