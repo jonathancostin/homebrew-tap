@@ -1,12 +1,18 @@
 # jonathancostin/homebrew-tap
 
-Homebrew tap (`jonathancostin/tap`) for Jonathan Costin projects. It currently holds one cask: `fan-curve`, the macOS menu-bar app "Fan Curve" (temperature-based fan controller for supported Macs).
+Homebrew tap (`jonathancostin/tap`) for Jonathan Costin projects. It holds the `fan-curve` cask, the macOS menu-bar app "Fan Curve" (temperature-based fan controller for supported Macs), and the `tuitree` formula, a terminal dashboard for git worktrees and GitHub PRs.
 
 ## Status
 
 - Public, default branch `main`.
 - Current `fan-curve` cask version: 1.0.6.
 - This repo has no workflows of its own. Cask version bumps are pushed by `github-actions[bot]` from the fan-curve repo's `Release to Homebrew` workflow (`.github/workflows/release.yml`), which runs on every push to fan-curve's `main`, creates a GitHub release, and updates `version` and `sha256` in `Casks/fan-curve.rb`.
+
+## Formulae
+
+| Formula | Installs | Source |
+|---|---|---|
+| `tuitree` | the `tuitree` binary (macOS arm64/x86_64, Linux arm64/x86_64) | prebuilt tarballs from the [jonathancostin/tuitree](https://github.com/jonathancostin/tuitree) GitHub release |
 
 ## Casks
 
@@ -26,6 +32,8 @@ What the `fan-curve` cask does:
 ## Install
 
 ```sh
+brew install jonathancostin/tap/tuitree
+
 brew install --cask jonathancostin/tap/fan-curve
 fan-curve-helper install
 ```
@@ -46,6 +54,7 @@ None.
 ```text
 README.md
 Casks/fan-curve.rb
+Formula/tuitree.rb
 ```
 
 ## License
