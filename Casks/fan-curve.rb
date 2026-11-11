@@ -1,6 +1,6 @@
 cask "fan-curve" do
-  version "1.0.6"
-  sha256 "a967c22ca4ea6cd33f170dedab9791d33de18e2a1027ec685ec3e30644a9cb65"
+  version "1.0.13"
+  sha256 "eefd0aa9ecb2630d63f11e28866419cabe93b86105a0e0f18ea8428db4abccf9"
 
   url "https://github.com/8thlyr/fan-curve/releases/download/v#{version}/fan-curve-#{version}-source.tar.gz"
   name "Fan Curve"
