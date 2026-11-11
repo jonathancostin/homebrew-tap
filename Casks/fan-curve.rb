@@ -2,10 +2,10 @@ cask "fan-curve" do
   version "1.0.6"
   sha256 "a967c22ca4ea6cd33f170dedab9791d33de18e2a1027ec685ec3e30644a9cb65"
 
-  url "https://github.com/jonathancostin/fan-curve/releases/download/v#{version}/fan-curve-#{version}-source.tar.gz"
+  url "https://github.com/8thlyr/fan-curve/releases/download/v#{version}/fan-curve-#{version}-source.tar.gz"
   name "Fan Curve"
   desc "Temperature-based fan controller for supported Macs"
-  homepage "https://github.com/jonathancostin/fan-curve"
+  homepage "https://github.com/8thlyr/fan-curve"
 
   livecheck do
     url :url
