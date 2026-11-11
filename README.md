@@ -12,13 +12,13 @@ Homebrew tap (`jonathancostin/tap`) for Jonathan Costin projects. It holds the `
 
 | Formula | Installs | Source |
 |---|---|---|
-| `tuitree` | the `tuitree` binary (macOS arm64/x86_64, Linux arm64/x86_64) | prebuilt tarballs from the [jonathancostin/tuitree](https://github.com/jonathancostin/tuitree) GitHub release |
+| `tuitree` | the `tuitree` binary (macOS arm64/x86_64, Linux arm64/x86_64) | prebuilt tarballs from the [8thlyr/tuitree](https://github.com/8thlyr/tuitree) GitHub release |
 
 ## Casks
 
 | Cask | Installs | Source |
 |---|---|---|
-| `fan-curve` | `Fan Curve.app` plus the `fan-curve-helper` command | [jonathancostin/fan-curve](https://github.com/jonathancostin/fan-curve) GitHub release (source tarball) |
+| `fan-curve` | `Fan Curve.app` plus the `fan-curve-helper` command | [8thlyr/fan-curve](https://github.com/8thlyr/fan-curve) GitHub release (source tarball) |
 
 What the `fan-curve` cask does:
 
@@ -64,4 +64,4 @@ None.
 ## Links
 
 - Tap: https://github.com/jonathancostin/homebrew-tap
-- fan-curve: https://github.com/jonathancostin/fan-curve
+- fan-curve: https://github.com/8thlyr/fan-curve
